@@ -36,7 +36,3 @@ crldriving=cut(data$Careless.Driving,breaks = brks, right=FALSE,labels=col) # bu
 crldriving=as.character(crldriving)
 dotchart(data$Careless.Driving, cex= 0.5, pch=19, color=crldriving, main ="Careless Driving")
 abline(v=c(25), col="lightgrey")
-
-#legend
-plot(-1:15,-1:15,type="n", xaxt="n",yaxt="n", xlab="",ylab="",bty="n")
-legend(-1,10,fill=c("#ccece6","#99d8c9","#66c2a4","#41ae76","#238b45","#005824"), legend=c("0-10","11-20","21-30","31-40","41-50","51-60"),bty="n")
